@@ -35,8 +35,10 @@ body{
    background-color: #E7FEFF;
 }
 .container{
-	width: 500px;
-	height: 500px;
+    //width: 500px;
+	//height: 500px;
+	width: 40%;
+	height: 40%;
 	background-color: #98FF98;
 	position: absolute;
 	left:50%;
@@ -46,8 +48,10 @@ body{
 }
 
 .container div{
-	width: 125px;
-	height: 125px;
+	//width: 125px;
+	//height: 125px;
+        width: 10%;
+	height: 10%;
 	background-color: #DBF6F9;
 	float: left;
 }
