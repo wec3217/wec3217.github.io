@@ -62,7 +62,7 @@ body{
         
 }
 .side{
-	transition:all 0.2s;
+	transition:all 0.5s;
         transform-style: preserve-3d;
         position: relative;
         width: 125px;
