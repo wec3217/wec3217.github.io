@@ -1,0 +1,64 @@
+h1{
+    position: absolute;
+    left:46%;
+    top: 0%;
+    alignment-adjust: middle;   
+}
+h2{
+    position: absolute;
+    left:90%;
+    top: 10%; 
+    
+}
+h3{
+    position: absolute;
+    left:41%;
+    top: 10%;
+    alignment-adjust: middle;   
+}
+
+body{
+   background-color: #E7FEFF;
+}
+.container{
+	width: 500px;
+	height: 500px;
+	background-color: #DCC1F9;
+	position: absolute;
+	left:50%;
+	top:60%;
+	margin-top: -250px;
+	margin-left: -250px;
+}
+
+.container div{
+	width: 125px;
+	height: 125px;
+	background-color: #DBF6F9;
+	float: left;
+}
+
+.container div img{
+	width: 125px;
+	height: 125px;
+}
+.side{
+	transition:all 0.2s;
+        transform-style: preserve-3d;
+        position: relative;
+        width: 125px;
+        height: 125px;
+        border-color: black;
+      
+}
+
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+
+}
+
+.back {
+  transform: rotateY(180deg);
+}
