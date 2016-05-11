@@ -1,10 +1,72 @@
 $(document).ready(function(){
-newGame();
+    var availablePic=[1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+$("#restartButton").click(function () {
+    newGame();
+    document.getElementById('restartButton').disabled = true;
+    document.getElementById('restartButton').style.backgroundColor="#92C7C7";
+    });
+
+
+function loadGrid(){
+    //console.log(availablePic);
+    var newArray=[];
+    var randNum=Math.floor((Math.random() * 8) + 0);
+    var counter=0;
+    //popoulate the array
+    for(var i=0;i<16;i++){
+        newArray[i]=0;
+    }
+    //choose 8 from 9 pic
+    for(var i=0;i<8;i++){
+        if(counter!==randNum){
+            newArray[i]=availablePic[counter];
+            newArray[i+8]=availablePic[counter];
+            
+            counter++;
+        }else{
+            counter++;
+            newArray[i]=availablePic[counter];
+            newArray[i+8]=availablePic[counter];
+        }
+    }  
+    console.log(newArray);  
+    //shuffle the array
+    for(var i=0;i<100;i++){
+      var rand1= Math.floor((Math.random() * 7) + 0);
+      var rand2= Math.floor((Math.random() * 7) + 0);
+      var temp=newArray[rand1];
+      if(temp===0){
+          console.log("rand1: "+rand1+" rand2: "+rand2+" temp "+temp);
+            
+      }
+       //console.log("temp"+temp);
+      //console.log("first"+newArray[rand1]);
+      //console.log("second"+newArray[rand2]);
+      newArray[rand1]=newArray[rand2];
+      newArray[rand2]=temp;
+    }
+    console.log(newArray);
+    
+    $("#container").empty();
+    var tempString="";
+    for(var i=0;i<16;i++){
+    tempString+="<div class=\"side\">";
+    tempString+="<div class=\"front\"><img src=\"images/unfinished.png\"></div>";
+    tempString+="<div class=\"back\"><img src=\"images/"+newArray[i]+".png\"></div>"
+    tempString+="</div>";
+    }
+    //console.log(tempString);
+    $("#container").append(tempString);
+    //console.log("\nfinished\n");
+    tempString="";
+    
+}
 
 
 function newGame(){
-    
-    count = 200;
+    loadGrid();
+    count = 600;
     inGame = true;
     countdown();
     var list=$(".side"),
@@ -64,9 +126,9 @@ function newGame(){
                             list[inds[2]].flag=null;
 
                             if(counter===list.length){
-                                alert("congradulations！You win! And that's all for this Game!");
-                                document.getElementById('time').innerHTML = "You won!";
+                                alert("congradulations！You win!");
                                 inGame =false;
+                                location.reload();
                             }
                             temp=0;
                     }
@@ -80,7 +142,7 @@ function newGame(){
     
     
  //Timer
-    var count = 300;
+    var count = 600;
     var inGame = true;
     
     

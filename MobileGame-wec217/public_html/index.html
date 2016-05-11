@@ -8,103 +8,29 @@
     Description: you need to flip the cards and find a pair of each fruit
 -->
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Flip Fruit</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
-    <script type="text/javascript" src="js.js"></script>
-</head>
-<body>
-    <div id="header">
-    <h1>Flip Fruit</h1>
-    <h3>It's time to test your memory!</h3>
-    <h2 id="time">test</h2>
-    </div>
-    <div class="container">
-
-        <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/1.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/3.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/1.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/2.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/4.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/8.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/2.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/6.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/7.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/3.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/5.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/8.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/4.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/7.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/5.png"></div>
-        </div>
-
-         <div class="side">
-            <div class="front"><img src="images/unfinished.png"></div>
-            <div class="back"><img src="images/6.png"></div>
-        </div>
-        </div>
+    <head>
+        <title>Flip Fruit</title>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
        
-</body>
- 
+        
+        <script src="http://code.jquery.com/jquery-2.1.0.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js.js"></script>
+        
+    </head>
+    <body>
+        <div id="header">
+            <!--<h1>Flip Fruit</h1>
+            <h3>It's time to test your memory!</h3>-->
+            <input type="button" id="restartButton" value="New Game"/>
+            <h2 id="time">TimeLeft</h2>
+        </div>
+        <div id="container" class="container">
+        </div>
+
+    </body>
+
 
 </html>

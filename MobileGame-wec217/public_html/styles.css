@@ -1,32 +1,46 @@
+/*
 h1{
     position: absolute;
     left:46%;
     top: 0%;
     alignment-adjust: middle;   
 }
-h2{
-    position: absolute;
-    left:90%;
-    top: 10%; 
-    
-}
 h3{
     position: absolute;
     left:41%;
-    top: 10%;
+    top: 7%;
     alignment-adjust: middle;   
+}
+*/
+
+h2{
+    position: absolute;
+    left:40%;
+    top: 0%; 
+    
+}
+#restartButton{
+    position: absolute;
+    border-style: outset;
+    color:  black;
+    background-color: #AAF0D1;
+    left:61.8%;
+    top: 3%;
+    alignment-adjust: middle; 
 }
 
 body{
+    width: 100%;
+    height:100%;
    background-color: #E7FEFF;
 }
 .container{
 	width: 500px;
 	height: 500px;
-	background-color: #DCC1F9;
+	background-color: #98FF98;
 	position: absolute;
 	left:50%;
-	top:60%;
+	top:50%;
 	margin-top: -250px;
 	margin-left: -250px;
 }
